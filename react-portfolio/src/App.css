@@ -1,0 +1,193 @@
+body {
+  background-color: #00ADB5;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: oldlace;
+}
+/* flex box used to style header */
+h2 {
+  text-align: center;
+}
+
+.nav {
+  background-color: #353b44;
+  border: none;
+}
+
+.photoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav:hover a {
+  color: white;
+}
+
+.nav a {
+  color: oldlace;
+}
+
+.header {
+  padding: 25px;
+  background-color: #222831;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 35px;
+  margin-right: auto;
+  text-align: center;
+}
+
+.projects {
+  text-align: center;
+}
+
+.projects li {
+  list-style: none;
+}
+
+.page-links {
+  list-style: none;
+}
+/* links are given a hover selector */
+.page-links a:hover {
+  color: wheat;
+  text-shadow: 4px 4px rgba(19, 18, 18, 0.5);
+}
+
+.page-links li {
+  display: inline;
+  padding: 0px 5px;
+}
+
+.page-links a {
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+}
+
+#me {
+  float: left;
+}
+
+.about-me {
+  height: 100%;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: oldlace;
+  font-size: 22px;
+  text-align: center;
+}
+
+#work {
+  height: 800px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #222831;
+  color: oldlace;
+  font-size: 22px;
+  padding-bottom: 52px;
+}
+
+
+/* another hover selector and image styling */
+
+.container img:hover {
+  transform: translateY(-6px) translateX(-6px);
+  filter: none;
+  box-shadow: 10px 10px rgba(19, 18, 18, 0.5);
+}
+
+.image-txt {
+  background-color: #222831;
+  padding: 10px;
+}
+
+.container {
+  width: 800px;
+  padding-top: 5px;
+}
+
+#work h2 {
+  font-size: 30px;
+  padding: 8px;
+  margin-right: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+#work {
+  height: auto;
+}
+
+/* flexbox used once again to style the footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #EEEEEE;
+  color: black;
+  font-size: 22px;
+}
+
+.personal-links {
+  list-style: none;
+  justify-self: center;
+  display: flex;
+}
+
+.personal-links li {
+  padding: 0px 5px;
+}
+
+.personal-links a {
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+}
+
+.personal-links a:hover {
+  color: rgb(7, 7, 75);
+  text-shadow: 1px 1px rgba(19, 18, 18, 0.5);
+}
+/* media queries adjust the page when it is resized */
+@media screen and (max-width:1625px) {
+  #about-me {
+      width: 1000px;
+      display: inline;
+  }
+
+  #about-me p{
+      display: inline-block;
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #about-me {
+      display: inline;
+  }
+
+  #me {
+      width: 100%;
+  }
+
+  #about-me p {
+      display: inline-block;
+      font-size: 15px;
+  }
+
+  ul.page-links {
+      text-align: center;
+  }
+
+  .container {
+      width: 100%;
+  }
+
+}

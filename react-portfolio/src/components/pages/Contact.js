@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
+    <div className='contact'>
+      <h2>Contact Page</h2>
       <p>
         Below will be a few ways to contact me. My GitHub and LinkIn as well as my resume. Feel free to contact me if any questions or concerns arise. 
       </p>
