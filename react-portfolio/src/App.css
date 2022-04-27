@@ -8,6 +8,22 @@ h2 {
   text-align: center;
 }
 
+.resume li {
+  font-size: large;
+}
+
+.example {
+  background-color: #222831;
+}
+
+.resume a {
+  color: rgb(238, 214, 185);
+}
+
+.resume a:hover {
+  color: rgb(163, 162, 139);
+}
+
 .nav {
   background-color: #353b44;
   border: none;
@@ -44,6 +60,17 @@ h2 {
 
 .projects {
   text-align: center;
+}
+
+.pContainer {
+  height: 150px;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.pContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .projects li {
@@ -92,14 +119,6 @@ h2 {
   padding-bottom: 52px;
 }
 
-
-/* another hover selector and image styling */
-
-.container img:hover {
-  transform: translateY(-6px) translateX(-6px);
-  filter: none;
-  box-shadow: 10px 10px rgba(19, 18, 18, 0.5);
-}
 
 .image-txt {
   background-color: #222831;

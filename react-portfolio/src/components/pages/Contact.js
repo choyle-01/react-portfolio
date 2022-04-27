@@ -3,13 +3,21 @@ import React from 'react';
 export default function Contact() {
   return (
     <div className='contact'>
-      <h2>Contact Page</h2>
-      <p>
-        Below will be a few ways to contact me. My GitHub and LinkIn as well as my resume. Feel free to contact me if any questions or concerns arise. 
-      </p>
-      <a href='https://github.com/choyle-01' target='_blank' rel="noreferrer"><button>GitHub</button></a>
-      <a href='https://www.linkedin.com/in/michael-hoyle-523143226/' target='_blank' rel="noreferrer"><button>LinkedIn</button></a>
-      <a href='https://docs.google.com/document/d/1geiaMEMMjcTBS5OU3rXfStyzDAFSoRnUro86trLAiEQ/edit?usp=sharing' target='_blank' rel="noreferrer"><button>Resume</button></a>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></input>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></input>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
   );
 }
