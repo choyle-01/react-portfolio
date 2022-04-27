@@ -29,12 +29,6 @@ h2 {
   border: none;
 }
 
-.photoContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .nav:hover a {
   color: white;
 }
@@ -60,6 +54,11 @@ h2 {
 
 .projects {
   text-align: center;
+  margin-bottom: 125px;
+}
+
+.form-control {
+  width: auto;
 }
 
 .pContainer {
@@ -77,9 +76,6 @@ h2 {
   list-style: none;
 }
 
-.page-links {
-  list-style: none;
-}
 /* links are given a hover selector */
 .page-links a:hover {
   color: wheat;
@@ -97,10 +93,6 @@ h2 {
   text-decoration: none;
 }
 
-#me {
-  float: left;
-}
-
 .about-me {
   height: 100%;
   width: 100%;
@@ -110,70 +102,22 @@ h2 {
   text-align: center;
 }
 
-#work {
-  height: 800px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #222831;
-  color: oldlace;
-  font-size: 22px;
-  padding-bottom: 52px;
-}
-
-
-.image-txt {
-  background-color: #222831;
-  padding: 10px;
-}
-
 .container {
   width: 800px;
   padding-top: 5px;
 }
 
-#work h2 {
-  font-size: 30px;
-  padding: 8px;
-  margin-right: auto;
-  margin-bottom: auto;
-  text-align: center;
-}
-
-#work {
-  height: auto;
-}
-
 /* flexbox used once again to style the footer */
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 100px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #EEEEEE;
-  color: black;
+  background-color: #222831;
+  color: oldlace;
   font-size: 22px;
 }
 
-.personal-links {
-  list-style: none;
-  justify-self: center;
-  display: flex;
-}
-
-.personal-links li {
-  padding: 0px 5px;
-}
-
-.personal-links a {
-  font-size: 18px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-decoration: none;
-}
-
-.personal-links a:hover {
-  color: rgb(7, 7, 75);
-  text-shadow: 1px 1px rgba(19, 18, 18, 0.5);
-}
 /* media queries adjust the page when it is resized */
 @media screen and (max-width:1625px) {
   #about-me {
